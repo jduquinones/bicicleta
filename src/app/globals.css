@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #ff3c17;
+  --color-primary-50: #fff5f5;
+  --color-primary-100: #ffe5e0;
+  --color-primary-600: #e63514;
+  --color-dark: #1a1a1a;
+  --color-dark-800: #343a40;
+  --color-header: #222222;
+}
+
+@theme {
+  --font-primary: var(--font-oxanium);
+  --font-secondary: var(--font-poppins);
+
+  --font-sans: var(--font-primary);
+
+  --color-primary: var(--color-primary);
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-600: var(--color-primary-600);
+  --color-dark: var(--color-dark);
+  --color-dark-800: var(--color-dark-800);
+  --color-header: var(--color-header);
+}
+
+@utilitys {
+  .font-oxanium {
+    font-family: var(--font-primary);
+  }
+
+  .font-poppins {
+    font-family: var(--font-secondary);
+  }
+
+  .bg-header {
+    background-color: var(--color-header);
+  }
+}
+
+
+body {
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+/* Estilos personalizados para RoadPedal */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 60, 23, 0.2);
+}
