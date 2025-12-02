@@ -25,7 +25,7 @@ export default function NewsLetter() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 12,
       },
@@ -37,7 +37,7 @@ export default function NewsLetter() {
     hover: {
       scale: 1.05,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 10,
       },
@@ -59,7 +59,7 @@ export default function NewsLetter() {
       transition: {
         duration: 2,
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse" as const,
       },
     },
   };
